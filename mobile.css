@@ -1,0 +1,701 @@
+/* <---------------------- BREAKPOINTS ----------------------------->*/
+
+/* <-----------------------section----------------------------------> */
+
+section {
+    overflow: hidden;
+}
+
+/* <----------------------- BREAKPOINTS end of section ---------------------------->*/
+
+/* <------------- @media (max-width: 1326px) --------------------------->*/
+
+/* <------------- skills -----------------------> */
+
+@media (max-width: 1326px) {
+
+    .skills .skills-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: center;
+        gap: 1rem;
+    }
+
+    .skills-container .skills-box {
+        flex: none;
+        height: 100%;
+        width: 100%;
+        padding: 2rem;
+        border-top: .4rem solid var(--main-color);
+        border-bottom: .4rem solid var(--main-color);
+    }
+
+    .skills-box i {
+        font-size: 4rem;
+    }
+
+    .skills-box h3 {
+        font-size: 1.7rem;
+    }
+
+    .skills-box p {
+        font-size: 1.2rem;
+    }
+
+    .skills-box a {
+        font-size: 1rem;
+    }
+
+    /* <---------------- projects ----------------------------------->*/
+
+    .projects .projects-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: center;
+        gap: 1rem;
+    }
+
+    .projects-container .projects-box {
+        flex: none;
+        height: 100%;
+        width: 100%;
+        padding: 2rem;
+        border-top: .4rem solid var(--main-color);
+        border-bottom: .4rem solid var(--main-color);
+    }
+
+    .projects-box i {
+        font-size: 2.1rem;
+    }
+
+    .projects-box h4 {
+        font-size: 1.7rem;
+    }
+
+    .projects-box p {
+        font-size: 1.2rem;
+    }
+
+    /* <--------------------- heading highlight ------------------------------>*/
+
+    /* .heading,
+    .main-text {
+        background-color: var(--bg-color);
+        width: 100%;
+        text-align: center;
+        padding: 0rem;
+        box-sizing: border-box;
+        border-radius: 15px;
+        box-shadow: 0 .1rem 2rem var(--main-color);
+        border-top: .3rem solid var(--highlight-color);
+        border-bottom: .3rem solid var(--highlight-color);
+        border-left: .3rem solid var(--highlight-color);
+        border-right: .3rem solid var(--highlight-color);
+    } */
+
+    /* <---------------------- certificates ----------------------------->*/
+
+    .container {
+        margin-top: 2rem;
+        position: relative;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+        margin-bottom: 0rem;
+    }
+
+    .container img {
+        position: static;
+        max-width: 100%;
+        max-height: 100%;
+        /* border-radius: 5; */
+        box-shadow: 0 .1rem 1rem var(--highlight-color);
+        /* border-top: none;
+        border-bottom: none; */
+        /* margin-bottom: -2rem; */
+    }
+
+    .top-left,
+    .top-right,
+    .top-middle,
+    .bottom-left,
+    .bottom-right,
+    .bottom-middle {
+        position: static;
+        top: auto;
+        left: auto;
+        right: auto;
+        bottom: auto;
+        padding: 2px;
+
+    }
+}
+
+/* <--------------------------- @media (max-width: 1326px) BREAKPOINTS end------------------------------------------> */
+
+/* <---- html, contact, footer (1200) --------------> */
+
+@media (max-width: 1200px) {
+    html {
+        font-size: 55%;
+    }
+
+    .contact-container {
+        padding-top: 1rem;
+    }
+
+    .footer-text {
+        padding-top: 1rem;
+    }
+}
+
+/* <------------------------- @media (max-width: 1200px) BREAKPOINTS end ----------------> */
+
+/* <------------ header, section, padding (991px) -------------------> */
+
+@media (max-width: 991px) {
+    .header {
+        padding: .5rem 3%;
+    }
+
+    section {
+        padding: 10rem 3% 2rem;
+    }
+
+    .about {
+        padding-top: 7rem;
+    }
+
+    .skills {
+        padding-top: 7rem;
+    }
+
+    .contact {
+        padding-top: 7rem;
+    }
+
+    .projects {
+        padding-top: 7rem;
+    }
+}
+
+/* <----------------@media (max-width: 991px) BREAKPOINTS end----------------------------> */
+
+/* <----------menu, home, skills1 and certificates (768px)-------> */
+
+/* <------- menu ---------> */
+
+@media (max-width: 768px) {
+    #menu-icon {
+        display: block;
+    }
+
+    .navbar {
+        position: absolute;
+        top: 100%;
+        left: -100%;
+        width: 100%;
+        padding: 1rem 3%;
+        background: var(--second--bg-color);
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
+        z-index: 1;
+        transition: .25s ease;
+        transition-delay: .25s;
+    }
+
+    .navbar.active {
+        left: 0;
+        transition-delay: 0s;
+    }
+
+    .navbar .active-nav {
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: var(--bg-color);
+        border-top: .1rem solid rgba(0, 0, 0, .2);
+        z-index: -1;
+        transition: .25s ease;
+        transition-delay: 0s;
+    }
+
+    .navbar.active .active-nav {
+        left: 0;
+        transition-delay: .25s;
+
+    }
+
+    .navbar a {
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+        transform: translateX(-20rem);
+        transition: .25s ease;
+        transition-delay: 0s;
+    }
+
+    .navbar.active a {
+        transform: translateX(0);
+        transition-delay: .25s;
+    }
+
+    /* <----------------- home ---------------------------------->*/
+
+    .home {
+        flex-direction: column-reverse;
+    }
+
+    .home-content h3 {
+        font-size: 4.2rem;
+        margin-top: 2.8rem;
+    }
+
+    .home-content h1 {
+        font-size: 3rem;
+    }
+
+    .home-content p {
+        margin-right: -0.2rem;
+    }
+
+    .slider-image {
+        width: 45vw;
+        margin-top: 0rem;
+        margin-left: 0rem;
+    }
+
+    /* <------------------skillss1, education, certificate--------------------------------->*/
+
+    .skill-main {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .skill-right {
+        margin-top: -3rem;
+    }
+
+    .certificate2 {
+        margin-bottom: -6rem;
+    }
+
+    .education-row1 {
+        margin-top: 2rem;
+    }
+
+    .education-column1 {
+        margin-top: -2rem;
+    }
+}
+
+/* <----------------------- @media (max-width: 768px) BREAKPOINTS end -----------------------------------> */
+
+/* <----- contact-address, certificate and footer (730px) -------> */
+
+/* <--------------- contact ------------------------------------>*/
+
+@media (max-width: 730px) {
+
+    .contact-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 0rem;
+    }
+
+    .contact-box-left {
+        text-align: center;
+    }
+
+    .contact-box-left-address p {
+        margin-left: 10rem;
+    }
+
+    .contact-box-left h4 {
+        margin-left: -1rem;
+
+    }
+
+    .contact-box-left h3 {
+        margin-top: -5rem;
+        margin-left: -6rem;
+    }
+
+    .contact-form {
+        margin-top: -5rem;
+    }
+
+    .certificate2 {
+        margin-bottom: -7rem;
+    }
+
+    .footer-text {
+        padding-top: 2rem;
+        padding-bottom: 1rem;
+    }
+}
+
+/* <-------------- @media (max-width: 730px) BREAKPOINTS end -------------------------> */
+
+/* <-----projects, team, contact, skills and certificate (600px)-------> */
+
+/* <-------------------- projects ------------------------------->*/
+
+@media (max-width: 600px) {
+
+    .projects .projects-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+        gap: 1rem;
+    }
+
+    .projects-container .projects-box {
+        flex: none;
+        height: 100%;
+        width: 100%;
+        padding: 2rem;
+        border-top: .4rem solid var(--main-color);
+        border-bottom: .4rem solid var(--main-color);
+    }
+
+    .projects-box i {
+        font-size: 2rem;
+    }
+
+    .projects-box h4 {
+        font-size: 1.6rem;
+    }
+
+    .projects-box p {
+        font-size: 1.1rem;
+    }
+
+    /* <-------------- skills ----------------> */
+
+    .skills .skills-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+        gap: 1rem;
+    }
+
+    .skills-container .skills-box {
+        flex: none;
+        height: 100%;
+        width: 100%;
+        padding: 2rem;
+        border-top: .4rem solid var(--main-color);
+        border-bottom: .4rem solid var(--main-color);
+    }
+
+    .skills-box i {
+        font-size: 3rem;
+    }
+
+    .skills-box h3 {
+        font-size: 1.6rem;
+    }
+
+    .skills-box p {
+        font-size: 1.1rem;
+    }
+
+    .skills-box a {
+        font-size: 1rem;
+    }
+
+    /* <--------------- team ------------------> */
+
+    .team {
+        min-height: 50vh;
+        padding: 2rem 2% 1.5rem;
+        margin-bottom: -7rem;
+    }
+
+    .container1 {
+        width: 300px;
+        height: 300px;
+        margin-top: 1.5rem;
+    }
+
+    .container1 .icon1 {
+        width: 5%;
+        height: 5%;
+
+    }
+
+    .container1 .icon1 .imgBx {
+        width: 5rem;
+        height: 5rem;
+        transform-origin: 170px;
+        left: 840%;
+        margin-top: 31rem;
+    }
+
+    .content::after {
+        inset: 30px;
+    }
+
+    .content::before {
+        inset: 20px;
+    }
+
+    .contentBx .card .imgBx {
+        width: 150px;
+        height: 150px;
+        margin-top: -1rem;
+    }
+
+    .contentBx .card .textBx .sci li a {
+        width: 18px;
+        height: 18px;
+    }
+
+    /* <------------- contact ------------->*/
+
+    .contact-box-left {
+        text-align: center;
+    }
+
+    .contact-box-left-address p {
+        margin-left: 5rem;
+    }
+
+    .contact-box-left h4 {
+        margin-left: -1.5rem;
+
+    }
+
+    .contact-box-left h3 {
+        margin-top: -6rem;
+    }
+}
+
+/* <---------- certificate ------------> */
+
+@media (max-width: 600px) {
+    .certificate2 {
+        margin-bottom: 1rem;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-top: 3rem;
+        gap: 1.3rem;
+    }
+
+    .container img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 5;
+        box-shadow: 0 .1rem 1rem var(--highlight-color);
+        /* border: none; */
+    }
+
+    .top-left,
+    .top-right,
+    .top-middle .bottom-left,
+    .bottom-right,
+    .bottom-middle {
+        padding: 2px;
+    }
+}
+
+/* <----------------------@media (max-width: 600px) BREAKPOINTS end----------------------------->*/
+
+/* <------------------- @media (max-width: 500px) ---------------------------------> */
+
+/* <------------------ skills1, heading --------------------------------->*/
+
+@media (max-width: 500px) {
+
+    html {
+        font-size: 50%;
+    }
+
+    section.skills1 {
+        padding: 1.6rem 3% 0rem;
+    }
+
+    .heading,
+    .main-text {
+        background-color: var(--bg-color);
+        width: 100%;
+        text-align: center;
+        padding: 0rem;
+        box-sizing: border-box;
+        border-radius: 15px;
+        box-shadow: 0 .1rem 2rem var(--main-color);
+        border-top: .3rem solid var(--highlight-color);
+        border-bottom: .3rem solid var(--highlight-color);
+        border-left: .3rem solid var(--highlight-color);
+        border-right: .3rem solid var(--highlight-color);
+    }
+
+    /* <-------------- contact, team, home, about, footer ------------------------------------->*/
+
+    .contact-form .form-group input {
+        width: 100%;
+    }
+
+    .aman {
+        margin-top: 5rem;
+    }
+
+    .container1 .icon1 {
+        margin-top: 1.8rem;
+    }
+
+    .slider-image {
+        width: 85vw;
+    }
+
+    .about-img {
+        margin-top: 5rem;
+    }
+
+    .about-img img {
+        width: 130%;
+        border-radius: 50%;
+    }
+
+    .about-img .circle-spin {
+        top: 50%;
+        left: 50%;
+        width: 140%;
+        height: 140%;
+        border-radius: 50%;
+
+    }
+
+    .about-content {
+        margin-top: 5rem;
+    }
+
+    .footer-iconTop a {
+        width: 33px;
+        height: 33px;
+        margin-right: -1.8rem;
+    }
+
+    .footer-iconTop a i {
+        font-size: 22px;
+    }
+}
+
+/* <--------------------@media (max-width: 500px) BREAKPOINTS end------------------------------->*/
+
+/* <----------------- team, contact (480px) ---------------------------------->*/
+
+@media (max-width: 480px) {
+
+    html {
+        font-size: 48%;
+    }
+
+    .container1 .icon1 {
+        margin-top: 2.5rem;
+    }
+
+    .contact-box-left-address p {
+        margin-left: 0rem;
+    }
+
+    .contact-box-left h3 {
+        margin-top: -5rem;
+        margin-left: -15rem;
+    }
+
+}
+
+/* <------------------- @media (max-width: 500px) BREAKPOINTS end -------------------------------->*/
+
+/* <--------------------------------------------------->*/
+
+@media (max-width: 430px) {
+
+    html {
+        font-size: 47%;
+    }
+
+    .container1 .icon1 {
+        margin-top: 2.8rem;
+    }
+
+}
+
+/* <--------------------------------------------------->*/
+
+@media (max-width: 450px) {
+
+    .home-content h3 {
+        font-size: 4.7rem;
+    }
+}
+
+/* <--------------------------------------------------->*/
+
+@media (max-width: 400px) {
+
+    .home-content h3 {
+        font-size: 4.4rem;
+
+    }
+
+    .home-content h1 {
+        font-size: 3rem;
+    }
+}
+
+/* <--------------------------------------------------->*/
+
+@media (max-width: 386px) {
+
+    .home-content h3 {
+        font-size: 4.4rem;
+
+    }
+
+    .home-content h1 {
+        font-size: 3rem;
+    }
+}
+
+/* <---------------- home, about, footer (376px) ----------------------------------->*/
+
+@media (max-width: 376px) {
+
+    .home-content h3 {
+        font-size: 4.1rem;
+    }
+
+    .about-img img {
+        width: 125%;
+        border-radius: 50%;
+    }
+
+    .about-img .circle-spin {
+        top: 50%;
+        left: 50%;
+        width: 135%;
+        height: 135%;
+        border-radius: 50%;
+    }
+
+    .about-content {
+        margin-top: 4rem;
+    }
+
+    .home-content h1 {
+        font-size: 2.8rem;
+    }
+
+    .footer-text p {
+        font-size: 1.7rem;
+    }
+}
+
+/* <--------------------- BREAKPOINTS END ------------------------------>*/
